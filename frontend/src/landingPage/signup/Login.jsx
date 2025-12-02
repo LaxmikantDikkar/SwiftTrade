@@ -32,7 +32,7 @@ const Login = () => {
        
   try {
     const { data } = await axios.post(
-      "https://swifttrade-wpeq.onrender.com/login",
+      "https://swifttrading.netlify.app/login",
       {
         email: "guestlogin@gmail.com",
         password: "Pass@123",
@@ -63,7 +63,7 @@ const Login = () => {
       if (success) {
         handleSuccess(message);
         setTimeout(() => {
-          window.location.href = "https://swifttradingd.netlify.app";
+          window.location.href = "https://swifttrading.netlify.app/login";
         }, 1000);
       } else {
         handleError(message);
