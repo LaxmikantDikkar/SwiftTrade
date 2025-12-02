@@ -35,7 +35,7 @@ const Signup = () => {
     
     try {
       const { data } = await axios.post(
-        "http://localhost:3000/signup",
+        "https://swifttrade-wpeq.onrender.com/signup",
         {
           ...inputValue,
         },
