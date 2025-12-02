@@ -1,0 +1,23 @@
+
+
+.piechart{
+    height: 460px;
+    width: 600px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.closeIcon {
+  position: absolute;
+  top: 1px;         /* adjust as needed */
+  right: 1px;       /* adjust as needed */
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+.closeIcon:hover{
+    
+    color: white;
+    transition: 0.5s;
+
+    background-color: red;
+}

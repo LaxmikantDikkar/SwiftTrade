@@ -1,0 +1,14 @@
+.nav-item{
+    padding-left: 10px;
+}
+
+#navbarSupportedContent{
+    font-size: 20px;
+}
+
+header {
+  position: sticky;
+  top: 0;
+  z-index: 2000;
+  background-color: white;
+}
