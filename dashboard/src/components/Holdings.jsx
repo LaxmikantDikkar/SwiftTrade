@@ -49,7 +49,7 @@ const Holdings = () => {
   let [holdings, setHoldings] = useState([]);
  
   useEffect(()=>{
-    axios.get("http://localhost:3000/holdings").then((response)=>{
+    axios.get("https://swifttrade-wpeq.onrender.com/holdings").then((response)=>{
     setHoldings(response.data);
     
     
