@@ -12,7 +12,7 @@ import MoreHorizOutlinedIcon from '@mui/icons-material/MoreHorizOutlined';
 const WatchList = () => {
   const [data, setData] = new useState([]);
   useEffect(()=>{
-    axios.get("http://localhost:3000/watchlist").then((res)=>{
+    axios.get("https://swifttrade-wpeq.onrender.com/watchlist").then((res)=>{
       setData(res.data);
     }).catch((err)=>{
       console.log(err.message);
