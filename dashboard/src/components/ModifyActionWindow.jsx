@@ -14,7 +14,7 @@ const ModifyActionWindow = ({ uid }) => {
   const [holdingData, setHoldingData] = useState([]);
   
   useEffect(()=>{
-    axios.get(`http://localhost:3000/newModifyOrder/${uid}`).then((res)=>{
+    axios.get(`https://swifttrade-wpeq.onrender.com/newModifyOrder/${uid}`).then((res)=>{
         setStockPrice(res.data.price);
         setStockQuantity(res.data.qty);
     }).catch((err)=>{
@@ -27,7 +27,7 @@ const ModifyActionWindow = ({ uid }) => {
 //     console.log(holdingData);
 // })
   const handleModifyClick = ()=>{
-    axios.patch(`http://localhost:3000/newModify/${uid}`, {
+    axios.patch(`https://swifttrade-wpeq.onrender.com/newModify/${uid}`, {
       qty: stockQuantity,
       price: stockPrice
     });
