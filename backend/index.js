@@ -22,7 +22,7 @@ mongoose.connect(url);
 app.use(express.urlencoded({ extended: true }));
 
 app.use(cors({
-    origin: ['https://swifttrading.netlify.app/', 'https://swifttradingd.netlify.app/'],
+    origin: ['https://swifttrading.netlify.app/', 'https://swifttradingd.netlify.app/', 'https://swifttrade-wpeq.onrender.com'],
     credentials: true
 }));
 
