@@ -8,7 +8,7 @@ const Positions = () => {
   let [positions, setPositions] = useState([]);
  
   useEffect(()=>{
-    axios.get("http://localhost:3000/positions").then((response)=>{
+    axios.get("https://swifttrade-wpeq.onrender.com/positions").then((response)=>{
     setPositions(response.data);
     
     
