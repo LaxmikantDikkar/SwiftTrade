@@ -17,7 +17,7 @@ const Orders = () => {
     if (loading) return;   // wait until user is loaded
     console.log(user, username);
     if(!user) return;
-    axios.post("http://localhost:3000/orders", {user}).then((res)=>{
+    axios.post("https://swifttrade-wpeq.onrender.com/orders", {user}).then((res)=>{
       setOrders(res.data);
       
     }).catch((err)=>{
@@ -33,7 +33,7 @@ const Orders = () => {
 
   const handleDeleteClick = (uid)=>{
     
-    axios.delete(`http://localhost:3000/orderDelete/${uid}`);
+    axios.delete(`https://swifttrade-wpeq.onrender.com/orderDelete/${uid}`);
   }
   const styles = {
     padding: "20px",
